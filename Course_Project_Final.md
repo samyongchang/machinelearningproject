@@ -258,7 +258,7 @@ modfitRF
 ## D    0    0   21 2550    2 0.0089389817
 ## E    0    0    2    6 2878 0.0027720028
 ```
-From the output the out of bag error rates for the Caret package model was 0.71% (Using 1-0.9929291 from mtry=2 accuracy) while that of the randomForrest package model was 0.38%. It would appear using modfitRF(randomForrest package model) would yield better results.
+From the output the out of bag error rates for the Caret package model was 0.73% (Using 1-0.9926742 from mtry=2 accuracy) while that of the randomForrest package model was 0.38%. It would appear using modfitRF(randomForrest package model) would yield better results.
 
 # Apply the final model to the test dataset to ascertain out of sample error
 Given the closeness of the two models we test both on the validation dataset. The accuracy rating of modfitRF was better at 99.46% (out of sample error of 0.54%) compared to 99.18% (out of sample error of 0.82%) from the modfitCaret model. We would thus use the modfitRF on the final test data.
